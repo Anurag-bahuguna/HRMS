@@ -15,6 +15,7 @@ app = FastAPI(title="HRMS Lite API")
 origins = [
     "http://localhost:3000",
     "http://localhost:5173",  # Vite default
+    "https://hrms-navy-nu.vercel.app",  # Production
 ]
 
 app.add_middleware(
