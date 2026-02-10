@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: hrms-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && gunicorn -k uvicorn.workers.UvicornWorker main:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PORT
+        value: 10000
