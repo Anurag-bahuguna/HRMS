@@ -5,8 +5,6 @@ import Dashboard from './pages/Dashboard';
 import Employees from './pages/Employees';
 import Attendance from './pages/Attendance'; 
 import './index.css'
-
-
 function App() {
   return (
     <Router>
